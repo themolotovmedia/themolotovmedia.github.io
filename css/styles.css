@@ -1,1 +1,25 @@
-placeholder
+/* Acadia Canine Academy — dark navy / charcoal static site */
+:root {
+  --bg: #0c1220;
+  --bg-elevated: #121a2b;
+  --bg-card: #1a2438;
+  --bg-card-hover: #22304a;
+  --navy: #1a3a6b;
+  --charcoal: #1e2a3a;
+  --accent: #6eb6e8;
+  --accent-strong: #4a9fd4;
+  --accent-soft: rgba(110, 182, 232, 0.12);
+  --accent-border: rgba(110, 182, 232, 0.35);
+  --text: #e8eef6;
+  --text-muted: #9aabc0;
+  --text-dim: #6b7d94;
+  --white: #ffffff;
+  --border: rgba(255, 255, 255, 0.08);
+  --radius: 12px;
+  --radius-sm: 8px;
+  --shadow: 0 12px 40px rgba(0, 0, 0, 0.35);
+  --max: 1120px;
+  --header-h: 72px;
+  --font-display: "Barlow Condensed", system-ui, sans-serif;
+  --font-body: Inter, system-ui, -apple-system, sans-serif;
+}
