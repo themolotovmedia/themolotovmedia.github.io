@@ -928,3 +928,29 @@ section {
   pointer-events: none;
   flex: 0 0 auto;
 }
+
+/* Book card actions: Amazon (primary) + free preview (secondary) */
+.book-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+  margin-top: 0.5rem;
+}
+.book-card .book-actions .btn {
+  margin-top: 0;
+  align-self: auto;
+}
+.book-card .book-actions .btn-primary,
+.book-card .book-actions .btn-primary:hover {
+  color: var(--bg);
+}
+.book-card .book-actions .btn-ghost {
+  color: var(--text);
+}
+.book-card .book-actions .btn-ghost:hover {
+  color: var(--white);
+}
+
+.page-hero .lead + .lead {
+  margin-top: 0.75rem;
+}
