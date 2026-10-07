@@ -27,7 +27,7 @@ Any free port works (`python3 -m http.server 5500`, etc.). You can also open `in
 | `store.html` | Store |
 | `contact.html` | Contact |
 
-Assets live in `assets/` (SVG wrappers with embedded optimized rasters for reliable GitHub MCP text pushes).
+Assets live in `assets/` (copied from `../airo-assets/`; originals untouched).
 
 ## Hosting
 
