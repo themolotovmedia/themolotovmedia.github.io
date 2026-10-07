@@ -897,3 +897,25 @@ section {
     align-items: flex-start;
   }
 }
+
+/* Polish: nav link styles were overriding the header button and social icons */
+.nav a.btn-primary,
+.nav a.btn-primary:hover {
+  color: var(--bg);
+  background: var(--accent-strong);
+  padding: 0.6rem 1.15rem;
+  border-radius: 999px;
+  font-weight: 600;
+}
+.nav a.btn-primary:hover { background: var(--accent); }
+.social-links { gap: 0.4rem; margin-left: 0.25rem; }
+.social-links a,
+.nav .social-links a {
+  padding: 0;
+  width: 36px;
+  height: 36px;
+  flex-shrink: 0;
+  border-radius: 999px;
+  color: var(--text);
+}
+.social-links svg { width: 18px; height: 18px; flex-shrink: 0; }
