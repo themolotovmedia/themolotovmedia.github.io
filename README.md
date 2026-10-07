@@ -1,4 +1,4 @@
-# Acadia Canine Academy — public static site
+# Acadia Canine Academy: public static site
 
 Fee-free public website for **acadiacanineacademy.com**.
 
@@ -31,13 +31,13 @@ Assets live in `assets/` (copied from `../airo-assets/`; originals untouched).
 
 ## Hosting
 
-Point the domain (or GitHub Pages / Netlify / Cloudflare Pages / any static host) at **this folder** as the site root. Upload or push the contents of `site/` — not the parent `aca/` folder.
+Point the domain (or GitHub Pages / Netlify / Cloudflare Pages / any static host) at **this folder** as the site root. Upload or push the contents of `site/`, not the parent `aca/` folder.
 
 Recommended: set the document root so `index.html` is the homepage and paths like `/about.html` resolve.
 
 ## Notes for Ryan
 
-- Contact form uses a private `mailto:` destination in JS/form action only — **do not display any email address on the public pages**.
-- Social: Facebook, Instagram, YouTube, X — see `../SOCIAL_LINKS.md`.
+- Contact form uses a private `mailto:` destination in JS/form action only. **Do not display any email address on the public pages**.
+- Social: Facebook, Instagram, YouTube, X. See `../SOCIAL_LINKS.md`.
 - Programs are **Coming Soon**; only public price shown is **$60 CAD/hour** consultation.
-- Four Amazon.ca paperback links only (no Apex Protocol).
+- Four Amazon.ca paperback links plus two "coming soon" books (The Sport Dog Playbook, Protection Training). No Apex Protocol.
