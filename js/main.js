@@ -14,6 +14,16 @@
     });
   }
 
+  var programSelect = document.querySelector("#program");
+  if (programSelect && window.URLSearchParams) {
+    var wanted = new URLSearchParams(window.location.search).get("program");
+    if (wanted) {
+      Array.prototype.forEach.call(programSelect.options, function (opt) {
+        if (opt.value === wanted) { programSelect.value = wanted; }
+      });
+    }
+  }
+
   var form = document.querySelector("#contact-form");
   if (form) {
     form.addEventListener("submit", function (e) {

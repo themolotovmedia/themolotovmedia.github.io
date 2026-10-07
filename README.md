@@ -24,6 +24,10 @@ Any free port works (`python3 -m http.server 5500`, etc.). You can also open `in
 | `index.html` | Home |
 | `about.html` | About |
 | `training.html` | Training |
+| `puppy-foundation.html` | Training > Puppy Foundation |
+| `basic-obedience.html` | Training > Basic Obedience |
+| `advanced-obedience.html` | Training > Advanced Obedience |
+| `rehabilitation.html` | Training > Rehabilitation |
 | `store.html` | Store |
 | `contact.html` | Contact |
 
