@@ -702,6 +702,13 @@ section {
   max-width: 22rem;
 }
 
+.footer-brand p.footer-fr {
+  margin-top: 0.4rem;
+  color: var(--text-muted);
+  font-size: 0.85rem;
+  font-style: italic;
+}
+
 .footer-brand strong {
   font-family: var(--font-display);
   letter-spacing: 0.06em;
