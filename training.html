@@ -4,11 +4,11 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Training Programs | Acadia Canine Academy</title>
-  <meta name="description" content="Puppy Foundation, Basic and Advanced Obedience, and Rehabilitation programs, launching soon. Consultations available at $60 CAD/hour in Meteghan, NS.">
+  <meta name="description" content="Puppy Foundation, Basic and Advanced Obedience, and Rehabilitation programs, launching soon. Consultations at $60 CAD/hour in Meteghan, NS, and in-home sessions at $75 CAD/hour on the French Shore, travel included.">
   <link rel="canonical" href="https://acadiacanineacademy.com/training.html">
   <link rel="icon" type="image/png" href="assets/logo-favicon.png">
   <meta property="og:title" content="Training Programs | Acadia Canine Academy">
-  <meta property="og:description" content="Structured programs for every stage, from puppy foundations to rehabilitation. Consultation rate $60 CAD/hour.">
+  <meta property="og:description" content="Structured programs for every stage, from puppy foundations to rehabilitation. Consultations $60 CAD/hour, in-home sessions $75 CAD/hour on the French Shore.">
   <meta property="og:image" content="https://acadiacanineacademy.com/assets/logo-og.jpg">
   <meta property="og:type" content="website">
   <meta name="twitter:card" content="summary_large_image">
@@ -16,23 +16,57 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/styles.css?v=20261007f">
+  <link rel="stylesheet" href="css/styles.css?v=20261008a">
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
-    "@type": "Service",
-    "name": "Walk-in / Consultation Hourly Rate",
-    "provider": {
-      "@type": "LocalBusiness",
-      "name": "Acadia Canine Academy"
-    },
-    "areaServed": "French Shore and surrounding Nova Scotia communities",
-    "offers": {
-      "@type": "Offer",
-      "price": "60.00",
-      "priceCurrency": "CAD",
-      "description": "Consultation and walk-in hourly rate"
-    }
+    "@graph": [
+      {
+        "@type": "Service",
+        "name": "Walk-in / Consultation Hourly Rate",
+        "serviceType": "Dog training consultation",
+        "provider": {
+          "@type": "LocalBusiness",
+          "name": "Acadia Canine Academy",
+          "url": "https://acadiacanineacademy.com/"
+        },
+        "areaServed": "French Shore and surrounding Nova Scotia communities",
+        "offers": {
+          "@type": "Offer",
+          "price": "60.00",
+          "priceCurrency": "CAD",
+          "description": "Consultation and walk-in hourly rate"
+        }
+      },
+      {
+        "@type": "Service",
+        "name": "In-home dog training session",
+        "serviceType": "In-home dog training",
+        "description": "One-on-one dog training at your home in Meteghan and on the French Shore of Nova Scotia. Travel included. Farther locations by request.",
+        "url": "https://acadiacanineacademy.com/training.html#in-home",
+        "provider": {
+          "@type": "LocalBusiness",
+          "name": "Acadia Canine Academy",
+          "url": "https://acadiacanineacademy.com/"
+        },
+        "areaServed": [
+          { "@type": "Place", "name": "Meteghan, Nova Scotia" },
+          { "@type": "AdministrativeArea", "name": "Municipality of the District of Clare, Nova Scotia (French Shore)" }
+        ],
+        "offers": {
+          "@type": "Offer",
+          "price": "75.00",
+          "priceCurrency": "CAD",
+          "description": "In-home session hourly rate, travel included in Meteghan and on the French Shore",
+          "priceSpecification": {
+            "@type": "UnitPriceSpecification",
+            "price": "75.00",
+            "priceCurrency": "CAD",
+            "unitCode": "HUR"
+          }
+        }
+      }
+    ]
   }
   </script>
 </head>
@@ -85,20 +119,38 @@
       </div>
     </section>
 
-    <section aria-labelledby="rate-heading">
+    <section aria-labelledby="rate-heading" id="rates">
       <div class="container">
         <div class="section-header">
           <p class="section-label">Available Now</p>
-          <h2 id="rate-heading">Consultation &amp; walk-in rate</h2>
-          <p>Full course packages are launching soon. Meanwhile, hourly consultations are open.</p>
+          <h2 id="rate-heading">Consultations &amp; in-home sessions</h2>
+          <p>Full course packages are launching soon. Meanwhile, hourly sessions are open, here or at your home.</p>
         </div>
-        <div class="price-callout">
-          <div>
-            <strong>$60 CAD / hour</strong>
-            <span>Walk-in and consultation hourly rate. Discuss your dog’s needs one-on-one</span>
+        <div class="rate-grid">
+          <div class="price-callout">
+            <div>
+              <p class="rate-label">Walk-in &amp; consultation</p>
+              <strong>$60 CAD / hour</strong>
+              <span>Walk-in and consultation hourly rate. Discuss your dog’s needs one-on-one in Meteghan.</span>
+            </div>
+            <a class="btn btn-primary" href="contact.html">Book a Session</a>
           </div>
-          <a class="btn btn-primary" href="contact.html">Book a Session</a>
+          <div class="price-callout" id="in-home">
+            <div>
+              <p class="rate-label">In-home sessions</p>
+              <strong>$75 CAD / hour</strong>
+              <span>Training at your home in Meteghan and on the French Shore, travel included. Farther away? Call or message to ask.</span>
+            </div>
+            <a class="btn btn-primary" href="contact.html?program=home-visit">Book a Home Visit</a>
+          </div>
         </div>
+        <h3 class="sub-h" id="home-visit-steps">How home visits work</h3>
+        <ol class="steps">
+          <li><strong>Tell us about your dog</strong>Choose “Home visit” on the contact form and fill out the short intake, so we know what to expect before we drive out.</li>
+          <li><strong>We get back to you</strong>We review your answers and reply within 1 to 2 business days to set a day and time.</li>
+          <li><strong>First visit</strong>We meet your dog where the problems happen, assess what is going on, and leave you with a clear plan and homework.</li>
+          <li><strong>Follow-up visits</strong>Each visit builds on the last, with progress tracked from session to session.</li>
+        </ol>
       </div>
     </section>
 
@@ -236,6 +288,6 @@
       </div>
     </div>
   </footer>
-  <script src="js/main.js?v=20261007f" defer></script>
+  <script src="js/main.js?v=20261008a" defer></script>
 </body>
 </html>

@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Contact | Acadia Canine Academy</title>
-  <meta name="description" content="Contact Acadia Canine Academy in Meteghan, NS. 8204 Hwy 1, phone (905) 517-5473. Serving the French Shore and surrounding communities.">
+  <meta name="description" content="Contact Acadia Canine Academy in Meteghan, NS. 8204 Hwy 1, phone (905) 517-5473. Consultations, and in-home sessions on the French Shore. Book a home visit online.">
   <link rel="canonical" href="https://acadiacanineacademy.com/contact.html">
   <link rel="icon" type="image/png" href="assets/logo-favicon.png">
   <meta property="og:title" content="Contact | Acadia Canine Academy">
@@ -16,7 +16,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/styles.css?v=20261007f">
+  <link rel="stylesheet" href="css/styles.css?v=20261008a">
 </head>
 <body>
   <a class="skip-link" href="#main">Skip to content</a>
@@ -79,6 +79,10 @@
               <p>French Shore &amp; surrounding Nova Scotia communities</p>
             </li>
             <li>
+              <strong>In-Home Sessions</strong>
+              <p>$75 CAD/hour at your home in Meteghan and on the French Shore, travel included. Farther away? Call or message to ask.</p>
+            </li>
+            <li>
               <strong>Response Time</strong>
               <p>Within 1 to 2 business days</p>
             </li>
@@ -90,7 +94,7 @@
             </li>
           </ul>
           <div class="note-box">
-            Programs are launching soon. Early inquiries are prioritized. Consultations are available at <strong style="color:var(--white)">$60 CAD/hour</strong>.
+            Programs are launching soon. Early inquiries are prioritized. Consultations are available at <strong style="color:var(--white)">$60 CAD/hour</strong>, and in-home sessions at <strong style="color:var(--white)">$75 CAD/hour</strong>, travel included on the French Shore.
           </div>
         </div>
 
@@ -98,17 +102,17 @@
           <h2>Send an inquiry</h2>
           <div class="form-row">
             <label for="name">Your Name <span aria-hidden="true">*</span></label>
-            <input id="name" name="name" type="text" required autocomplete="name" placeholder="Full name">
+            <input id="name" name="name" type="text" required data-req="Please enter your name." autocomplete="name" placeholder="Full name">
           </div>
           <div class="form-row">
             <label for="email">Email <span aria-hidden="true">*</span></label>
-            <input id="email" name="email" type="email" required autocomplete="email" placeholder="Your email address">
+            <input id="email" name="email" type="email" required data-req="Please enter your email address so we can reply." autocomplete="email" placeholder="Your email address">
           </div>
           <div class="form-row">
-            <label for="phone">Phone <span class="text-dim">(optional)</span></label>
+            <label for="phone">Phone <span class="text-dim" id="phone-optional">(optional)</span><span id="phone-required" aria-hidden="true" hidden>*</span></label>
             <input id="phone" name="phone" type="tel" autocomplete="tel" placeholder="(xxx) xxx-xxxx">
           </div>
-          <div class="form-row">
+          <div class="form-row" id="dog-type-row">
             <label for="dog-type">Dog Type</label>
             <select id="dog-type" name="dog-type">
               <option value="Puppy">Puppy</option>
@@ -121,6 +125,7 @@
             <label for="program">Program Interest</label>
             <select id="program" name="program">
               <option value="Consultation ($60/hr)">Consultation ($60/hr)</option>
+              <option value="Home visit (in-home session, $75/hr)" data-slug="home-visit">Home visit (in-home session, $75/hr)</option>
               <option value="Puppy Foundation">Puppy Foundation</option>
               <option value="Basic Obedience">Basic Obedience</option>
               <option value="Advanced Obedience">Advanced Obedience</option>
@@ -128,11 +133,181 @@
               <option value="General inquiry">General inquiry</option>
             </select>
           </div>
+          <fieldset id="home-visit" class="hv-fieldset" hidden disabled aria-describedby="hv-intro">
+            <legend>Home visit intake</legend>
+            <p id="hv-intro" class="hv-intro">In-home sessions are <strong>$75 CAD/hour</strong> in Meteghan and on the French Shore, travel included. Farther away? Call or message to ask first. These answers help us prepare before we drive out. Fields marked * are required.</p>
+
+            <h3 class="hv-h">Where and when</h3>
+            <div class="form-grid">
+              <div class="form-row">
+                <label for="hv-community">Community / town <span aria-hidden="true">*</span></label>
+                <input id="hv-community" name="hv-community" type="text" required data-req="Please enter your community or town." autocomplete="address-level2" placeholder="e.g. Meteghan River" maxlength="40">
+              </div>
+              <div class="form-row">
+                <label for="hv-address">Civic address or landmark <span aria-hidden="true">*</span></label>
+                <input id="hv-address" name="hv-address" type="text" required data-req="Please enter your civic address or a nearby landmark." autocomplete="street-address" maxlength="80">
+              </div>
+            </div>
+            <div class="form-row">
+              <label for="hv-times">Preferred days and times <span aria-hidden="true">*</span></label>
+              <input id="hv-times" name="hv-times" type="text" required data-req="Please tell us which days and times suit you." placeholder="e.g. weekday evenings, Saturday morning" maxlength="80">
+            </div>
+
+            <h3 class="hv-h">Your dog</h3>
+            <div class="form-grid">
+              <div class="form-row">
+                <label for="hv-dog-name">Dog’s name <span aria-hidden="true">*</span></label>
+                <input id="hv-dog-name" name="hv-dog-name" type="text" required data-req="Please enter your dog’s name." maxlength="30">
+              </div>
+              <div class="form-row">
+                <label for="hv-breed">Breed or mix <span aria-hidden="true">*</span></label>
+                <input id="hv-breed" name="hv-breed" type="text" required data-req="Please enter the breed or mix (a best guess is fine)." placeholder="A best guess is fine" maxlength="40">
+              </div>
+              <div class="form-row">
+                <label for="hv-age">Age <span aria-hidden="true">*</span></label>
+                <input id="hv-age" name="hv-age" type="text" required data-req="Please enter your dog’s age (a best guess is fine)." placeholder="e.g. 10 weeks, 3 years" maxlength="20">
+              </div>
+              <div class="form-row">
+                <label for="hv-weight">Approx. weight <span class="text-dim">(optional)</span></label>
+                <input id="hv-weight" name="hv-weight" type="text" placeholder="e.g. 60 lbs" maxlength="15">
+              </div>
+              <div class="form-row">
+                <label for="hv-sex">Sex <span aria-hidden="true">*</span></label>
+                <select id="hv-sex" name="hv-sex" required data-req="Please choose your dog’s sex.">
+                  <option value="">Choose</option>
+                  <option value="Male">Male</option>
+                  <option value="Female">Female</option>
+                </select>
+              </div>
+              <div class="form-row">
+                <label for="hv-fixed">Spayed / neutered <span aria-hidden="true">*</span></label>
+                <select id="hv-fixed" name="hv-fixed" required data-req="Please choose yes, no or not sure.">
+                  <option value="">Choose</option>
+                  <option value="Yes">Yes</option>
+                  <option value="No">No</option>
+                  <option value="Not sure">Not sure</option>
+                </select>
+              </div>
+            </div>
+            <div class="form-row">
+              <label for="hv-history">How long have you had your dog, and where from? <span class="text-dim">(optional)</span></label>
+              <input id="hv-history" name="hv-history" type="text" placeholder="e.g. 2 years, from a breeder / rescue" maxlength="60">
+            </div>
+            <div class="form-row" role="radiogroup" aria-labelledby="hv-vacc-label" data-group="hv-vacc" data-req="Please tell us if vaccinations are up to date.">
+              <span class="group-label" id="hv-vacc-label">Vaccinations up to date? <span aria-hidden="true">*</span></span>
+              <div class="choice-row">
+                <label><input type="radio" name="hv-vacc" value="Yes"> Yes</label>
+                <label><input type="radio" name="hv-vacc" value="No"> No</label>
+                <label><input type="radio" name="hv-vacc" value="Not sure"> Not sure</label>
+              </div>
+            </div>
+            <div class="form-row" role="radiogroup" aria-labelledby="hv-bite-label" data-group="hv-bite" data-req="Please answer the bite and aggression question. It keeps everyone safe.">
+              <span class="group-label" id="hv-bite-label">Has your dog ever bitten, snapped at or shown aggression toward a person or animal? <span aria-hidden="true">*</span></span>
+              <div class="choice-row">
+                <label><input type="radio" name="hv-bite" value="Yes"> Yes</label>
+                <label><input type="radio" name="hv-bite" value="No"> No</label>
+              </div>
+            </div>
+            <div class="form-row" id="hv-bite-details-row" hidden>
+              <label for="hv-bite-details">What happened? Who or what, and when <span aria-hidden="true">*</span></label>
+              <textarea id="hv-bite-details" name="hv-bite-details" class="short" data-req="Please give a few details about the bite or aggression. Honest answers help us keep everyone safe." maxlength="200" disabled></textarea>
+              <p class="field-help">Please be honest. This is only used to keep everyone safe and plan the right approach.</p>
+            </div>
+
+            <h3 class="hv-h">What you need help with</h3>
+            <div class="form-row" role="group" aria-labelledby="hv-concerns-label" data-group="hv-concerns" data-req="Please tick at least one main concern.">
+              <span class="group-label" id="hv-concerns-label">Main concerns (tick all that apply) <span aria-hidden="true">*</span></span>
+              <div class="check-grid">
+                <label><input type="checkbox" name="hv-concerns" value="Pulling"> Pulling on leash</label>
+                <label><input type="checkbox" name="hv-concerns" value="Jumping"> Jumping</label>
+                <label><input type="checkbox" name="hv-concerns" value="Recall"> Recall (coming when called)</label>
+                <label><input type="checkbox" name="hv-concerns" value="Reactive to dogs"> Reactive to dogs</label>
+                <label><input type="checkbox" name="hv-concerns" value="Reactive to people"> Reactive to people</label>
+                <label><input type="checkbox" name="hv-concerns" value="Aggression"> Aggression</label>
+                <label><input type="checkbox" name="hv-concerns" value="Anxiety/fear"> Anxiety or fear</label>
+                <label><input type="checkbox" name="hv-concerns" value="House training"> House training</label>
+                <label><input type="checkbox" name="hv-concerns" value="Puppy basics"> Puppy basics</label>
+                <label><input type="checkbox" name="hv-concerns" value="Other"> Other</label>
+              </div>
+            </div>
+            <div class="form-row">
+              <label for="hv-problem">Describe the main problem: what happens, where and how often <span aria-hidden="true">*</span></label>
+              <textarea id="hv-problem" name="hv-problem" class="short" required data-req="Please describe the main problem in a sentence or two." maxlength="250"></textarea>
+            </div>
+            <div class="form-row">
+              <label for="hv-goals">What would success look like for you? <span aria-hidden="true">*</span></label>
+              <textarea id="hv-goals" name="hv-goals" class="short" required data-req="Please tell us your main goal." maxlength="150" placeholder="e.g. calm walks past other dogs"></textarea>
+            </div>
+
+            <h3 class="hv-h">Your home</h3>
+            <div class="form-grid">
+              <div class="form-row">
+                <label for="hv-adults">Adults in the home <span class="text-dim">(optional)</span></label>
+                <input id="hv-adults" name="hv-adults" type="text" inputmode="numeric" maxlength="10" placeholder="e.g. 2">
+              </div>
+              <div class="form-row">
+                <label for="hv-kids">Children and their ages <span class="text-dim">(optional)</span></label>
+                <input id="hv-kids" name="hv-kids" type="text" maxlength="40" placeholder="e.g. 7 and 10, or none">
+              </div>
+            </div>
+            <div class="form-row">
+              <label for="hv-pets">Other pets <span class="text-dim">(optional)</span></label>
+              <input id="hv-pets" name="hv-pets" type="text" maxlength="50" placeholder="e.g. 1 cat, 1 older dog">
+            </div>
+            <div class="form-grid">
+              <div class="form-row">
+                <label for="hv-yard">Fenced yard? <span class="text-dim">(optional)</span></label>
+                <select id="hv-yard" name="hv-yard">
+                  <option value="">Choose</option>
+                  <option value="Yes">Yes</option>
+                  <option value="Partly">Partly</option>
+                  <option value="No">No</option>
+                </select>
+              </div>
+              <div class="form-row">
+                <label for="hv-stairs">Stairs to get in? <span class="text-dim">(optional)</span></label>
+                <select id="hv-stairs" name="hv-stairs">
+                  <option value="">Choose</option>
+                  <option value="Yes">Yes</option>
+                  <option value="No">No</option>
+                </select>
+              </div>
+            </div>
+            <div class="form-row">
+              <label for="hv-arrival">Parking, access, or anything we should know when we arrive <span class="text-dim">(optional)</span></label>
+              <textarea id="hv-arrival" name="hv-arrival" class="short" maxlength="150" placeholder="e.g. long driveway, other dogs loose in the yard"></textarea>
+            </div>
+            <div class="form-row" role="group" aria-labelledby="hv-tools-label">
+              <span class="group-label" id="hv-tools-label">Equipment you use now <span class="text-dim">(optional)</span></span>
+              <div class="check-grid">
+                <label><input type="checkbox" name="hv-tools" value="Flat collar"> Flat collar</label>
+                <label><input type="checkbox" name="hv-tools" value="Harness"> Harness</label>
+                <label><input type="checkbox" name="hv-tools" value="Leash"> Leash</label>
+                <label><input type="checkbox" name="hv-tools" value="Long line"> Long line</label>
+                <label><input type="checkbox" name="hv-tools" value="E-collar"> E-collar</label>
+                <label><input type="checkbox" name="hv-tools" value="Other"> Other</label>
+                <label><input type="checkbox" name="hv-tools" value="None"> None</label>
+              </div>
+            </div>
+            <div class="form-row">
+              <label for="hv-vet">Vet clinic <span class="text-dim">(optional)</span></label>
+              <input id="hv-vet" name="hv-vet" type="text" maxlength="40">
+            </div>
+
+            <h3 class="hv-h">Before we visit</h3>
+            <div class="form-row ack-list" role="group" aria-labelledby="hv-ack-label" data-group="hv-ack" data-all="1" data-req="Please tick all three boxes to continue.">
+              <span class="group-label" id="hv-ack-label">Please confirm <span aria-hidden="true">*</span></span>
+              <label><input type="checkbox" name="hv-ack" value="info accurate"> The information I have given is accurate and complete.</label>
+              <label><input type="checkbox" name="hv-ack" value="dog secured on arrival"> My dog will be secured (leashed, crated or behind a door) when the trainer arrives.</label>
+              <label><input type="checkbox" name="hv-ack" value="no guarantee"> I understand training results depend on many things and no outcome is guaranteed.</label>
+            </div>
+          </fieldset>
           <div class="form-row">
-            <label for="message">Tell us about your dog <span aria-hidden="true">*</span></label>
-            <textarea id="message" name="message" required placeholder="Breed, age, goals, challenges…"></textarea>
+            <label for="message"><span id="message-label">Tell us about your dog</span> <span id="message-req" aria-hidden="true">*</span><span id="message-opt" class="text-dim" hidden>(optional)</span></label>
+            <textarea id="message" name="message" required data-req="Please tell us a little about your dog." placeholder="Breed, age, goals, challenges…"></textarea>
           </div>
-          <button class="btn btn-primary" type="submit">Send Inquiry</button>
+          <p id="form-status" class="form-status" role="alert" hidden></p>
+          <button class="btn btn-primary" type="submit" id="submit-btn">Send Inquiry</button>
           <p class="form-hint">Opens your email app with a pre-filled inquiry. No account or backend required.</p>
         </form>
       </div>
@@ -187,6 +362,6 @@
       </div>
     </div>
   </footer>
-  <script src="js/main.js?v=20261007f" defer></script>
+  <script src="js/main.js?v=20261008a" defer></script>
 </body>
 </html>
