@@ -702,6 +702,24 @@ section {
   max-width: 22rem;
 }
 
+p.fr-sub,
+.card p.fr-sub {
+  margin: -0.3rem 0 0.6rem;
+  color: var(--text-muted);
+  font-size: 0.85rem;
+  font-style: italic;
+}
+
+.page-hero p.fr-sub-hero {
+  margin: -0.4rem 0 1rem;
+  font-size: 0.95rem;
+}
+
+.page-hero .lead + p.fr-sub-hero {
+  margin: 0.75rem 0 0;
+  max-width: 36rem;
+}
+
 .footer-brand p.footer-fr {
   margin-top: 0.4rem;
   color: var(--text-muted);
