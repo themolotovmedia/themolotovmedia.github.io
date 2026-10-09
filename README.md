@@ -43,6 +43,6 @@ Recommended: set the document root so `index.html` is the homepage and paths lik
 
 - Contact form uses a private `mailto:` destination in JS/form action only. **Do not display any email address on the public pages**.
 - Social: Facebook, Instagram, YouTube, X. See `../SOCIAL_LINKS.md`.
-- Programs are **Coming Soon**; public prices shown are **$60 CAD/hour** consultation and **$75 CAD/hour** in-home sessions (Meteghan and the French Shore, travel included; farther by request).
+- Programs are **Coming Soon**; public prices shown are **$60 CAD/hour** consultation and **$75 CAD/hour** in-home sessions (anywhere in the Municipality of Clare, travel included; farther by request).
 - Choosing "Home visit" on the contact form (or opening `contact.html?program=home-visit`) reveals a required home-visit intake. The answers go into the pre-filled email (subject "Home visit request: <dog>, <community>"), kept under about 1800 characters.
 - Four Amazon.ca paperback links plus two "coming soon" books (The Sport Dog Playbook, Protection Training). No Apex Protocol.
