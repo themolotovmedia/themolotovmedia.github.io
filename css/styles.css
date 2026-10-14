@@ -1360,3 +1360,12 @@ p.fr-sub,
   .hv-fieldset { padding: 1rem 0.9rem 0.25rem; }
 }
 .form-grid > .form-row { align-content: end; }
+
+/* Real photos (2026-10-14) */
+picture { display: block; }
+.founder-row--two { grid-template-columns: minmax(0, 40rem) minmax(0, 240px) minmax(0, 240px); }
+@media (max-width: 860px) {
+  .founder-row--two { grid-template-columns: 1fr 1fr; }
+  .founder-row--two .card { grid-column: 1 / -1; }
+  .founder-row--two .dog-photo { max-width: none; }
+}
