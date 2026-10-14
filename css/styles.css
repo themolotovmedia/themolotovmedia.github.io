@@ -1382,3 +1382,10 @@ picture { display: block; }
 .pup-tile figcaption { margin-top: 0.5rem; font-size: 0.85rem; line-height: 1.4; color: var(--text-dim); text-align: center; }
 @media (max-width: 860px) { .pup-row { grid-template-columns: repeat(3, minmax(0, 1fr)); } }
 @media (max-width: 560px) { .pup-row { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 0.75rem; } }
+
+.pup-grid { grid-template-columns: repeat(5, minmax(0, 1fr)); }
+@media (max-width: 860px) { .pup-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); } }
+@media (max-width: 560px) { .pup-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+.pup-grid + .pup-grid { margin-top: 1rem; }
+.gal-grid { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+@media (max-width: 560px) { .gal-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
