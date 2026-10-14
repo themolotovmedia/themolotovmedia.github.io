@@ -1396,3 +1396,7 @@ picture { display: block; }
 .founder-row--two .dog-photo { align-self: start; }
 @media (max-width: 860px) { .founder-row--two .split-copy { grid-column: 1 / -1; } }
 .tools-card p { margin: 0 0 1rem; line-height: 1.7; }
+.pup-grid--centered { display: flex; flex-wrap: wrap; justify-content: center; }
+.pup-grid--centered > .pup-tile { width: calc((100% - 5 * 1rem) / 6); }
+@media (max-width: 860px) { .pup-grid--centered > .pup-tile { width: calc((100% - 2 * 1rem) / 3); } }
+@media (max-width: 560px) { .pup-grid--centered > .pup-tile { width: calc((100% - 1rem) / 2); } }
