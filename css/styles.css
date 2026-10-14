@@ -1395,3 +1395,4 @@ picture { display: block; }
 @media (max-width: 860px) { .farm-row { grid-template-columns: 1fr; } .farm-row .dog-photo { max-width: 240px; } }
 .founder-row--two .dog-photo { align-self: start; }
 @media (max-width: 860px) { .founder-row--two .split-copy { grid-column: 1 / -1; } }
+.tools-card p { margin: 0 0 1rem; line-height: 1.7; }
