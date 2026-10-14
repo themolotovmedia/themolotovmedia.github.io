@@ -1391,3 +1391,7 @@ picture { display: block; }
 @media (max-width: 560px) { .gal-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
 .gal-grid { grid-template-columns: repeat(5, minmax(0, 1fr)); }
 @media (max-width: 860px) { .gal-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+.farm-row { display: grid; grid-template-columns: minmax(0, 40rem) minmax(0, 240px); gap: 2rem; align-items: center; justify-content: space-between; }
+@media (max-width: 860px) { .farm-row { grid-template-columns: 1fr; } .farm-row .dog-photo { max-width: 240px; } }
+.founder-row--two .dog-photo { align-self: start; }
+@media (max-width: 860px) { .founder-row--two .split-copy { grid-column: 1 / -1; } }
