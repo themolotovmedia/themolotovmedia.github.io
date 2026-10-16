@@ -1598,8 +1598,8 @@ picture { display: block; }
 .shop-item[hidden] { display: none; }
 .shop-item h3 { font-family: var(--font-display); font-size: 1.2rem; letter-spacing: 0.03em; text-transform: uppercase; margin: 0; color: var(--white); line-height: 1.2; }
 .product-cat { margin: 0; color: var(--accent); font-size: 0.75rem; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; }
-.product-img-book { background: #30331e; }
-.product-img-book img { aspect-ratio: 1 / 1; object-fit: contain; padding: 0.6rem; }
+.product-img-book { background: rgba(255, 255, 255, 0.05); }
+.product-img-book img { aspect-ratio: 1 / 1; object-fit: contain; padding: 0.9rem; filter: drop-shadow(0 4px 10px rgba(0, 0, 0, 0.45)); }
 .product-img-soon img { width: 100%; padding: 22%; opacity: 0.9; }
 .shop-actions { display: flex; flex-wrap: wrap; gap: 0.5rem; margin-top: 0.4rem; }
 .shop-actions .btn { margin-top: 0; padding: 0.6rem 1rem; font-size: 0.88rem; }
