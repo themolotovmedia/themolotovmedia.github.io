@@ -1542,3 +1542,18 @@ picture { display: block; }
 @media (min-width: 861px) and (max-width: 1000px) {
   .brand span { display: none; }
 }
+
+/* Insights */
+.insight-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1rem; }
+@media (max-width: 760px) { .insight-grid { grid-template-columns: 1fr; } }
+.insight-card h3 { margin: 0 0 0.5rem; font-size: 1.2rem; }
+.insight-card h3 a { color: var(--white); }
+.insight-card h3 a:hover { color: var(--accent); }
+.insight-card p { color: var(--text-muted); margin: 0 0 0.85rem; }
+.insight-card .more-link { color: var(--accent); font-weight: 600; }
+.article-body { max-width: 760px; }
+.article-body h2 { margin: 2rem 0 0.6rem; font-size: 1.6rem; }
+.article-body p { margin: 0 0 1rem; color: var(--text-muted); }
+.article-body ul, .article-body ol { margin: 0 0 1.25rem; padding-left: 1.4rem; color: var(--text-muted); }
+.article-body li { margin-bottom: 0.4rem; }
+.article-body a { color: var(--accent); text-decoration: underline; }
