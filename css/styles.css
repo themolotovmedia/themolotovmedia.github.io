@@ -1467,3 +1467,48 @@ picture { display: block; }
 .dealer-hero-badge img { width: 150px; height: 150px; display: block; }
 .page-hero .eyebrow a { color: inherit; }
 .dealer-copy { max-width: 40rem; color: var(--text-muted); margin: 0; }
+
+/* ECT product grid */
+.product-group {
+  font-family: var(--font-display);
+  font-size: 1.5rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--accent);
+  margin: 2rem 0 1rem;
+}
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(210px, 1fr));
+  gap: 1.25rem;
+}
+.product-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 1rem 1rem 1.25rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.45rem;
+}
+.product-img {
+  background: #fff;
+  border-radius: var(--radius-sm);
+  overflow: hidden;
+  margin-bottom: 0.4rem;
+}
+.product-img img { display: block; width: 100%; height: auto; aspect-ratio: 1 / 1; object-fit: contain; }
+.product-card h4 {
+  font-family: var(--font-display);
+  font-size: 1.25rem;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  margin: 0;
+  color: var(--white);
+}
+.product-model { margin: 0; color: var(--text-dim); font-size: 0.82rem; letter-spacing: 0.04em; }
+.product-desc { margin: 0; color: var(--text-muted); font-size: 0.9rem; flex: 1; }
+.product-price { margin: 0.35rem 0 0; color: var(--white); font-weight: 700; font-size: 1.1rem; }
+.product-card .btn { align-self: flex-start; margin-top: 0.4rem; }
+.product-note { max-width: 44rem; color: var(--text-muted); font-size: 0.92rem; margin: 2rem 0 1rem; }
+.dealer-teaser { font-weight: 700; color: var(--accent); }

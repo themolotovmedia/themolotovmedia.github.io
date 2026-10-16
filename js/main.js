@@ -53,6 +53,15 @@
     }
   }
 
+  // Prefill the message from ?product=... (ECT dealer page "Order" buttons)
+  var msgBox = document.querySelector("#message");
+  if (msgBox && window.URLSearchParams) {
+    var product = new URLSearchParams(window.location.search).get("product");
+    if (product && !msgBox.value) {
+      msgBox.value = "I'd like to order: " + product.slice(0, 120) + "\n\nMy dog: ";
+    }
+  }
+
   function setHidden(el, hidden) {
     if (!el) { return; }
     if (hidden) { el.setAttribute("hidden", ""); } else { el.removeAttribute("hidden"); }
@@ -259,7 +268,9 @@
       "Message:",
       val("#message")
     ].join("\n");
-    return { subject: "Training inquiry from " + name, body: body };
+    var opt = programSelect ? programSelect.options[programSelect.selectedIndex] : null;
+    var isOrder = !!(opt && opt.getAttribute("data-slug") === "ect-order");
+    return { subject: (isOrder ? "E-Collar Technologies order from " : "Training inquiry from ") + name, body: body };
   }
 
   if (form) {
