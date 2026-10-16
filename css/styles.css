@@ -1400,3 +1400,70 @@ picture { display: block; }
 .pup-grid--centered > .pup-tile { width: calc((100% - 5 * 1rem) / 6); }
 @media (max-width: 860px) { .pup-grid--centered > .pup-tile { width: calc((100% - 2 * 1rem) / 3); } }
 @media (max-width: 560px) { .pup-grid--centered > .pup-tile { width: calc((100% - 1rem) / 2); } }
+
+/* E-Collar Technologies Authorized Dealer badge */
+.dealer-badge-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.75rem;
+  color: var(--text-muted);
+  text-decoration: none;
+}
+.dealer-badge-link:hover { color: var(--white); }
+.dealer-badge-link img { display: block; height: auto; }
+.footer-dealer {
+  margin: -0.5rem 0 1.5rem;
+}
+.footer-dealer img { width: 56px; height: 56px; }
+.footer-dealer span {
+  font-size: 0.85rem;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+}
+.dealer-strip {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 0.9rem 1.25rem;
+  margin-bottom: 2.5rem;
+  background: var(--bg-card);
+  border: 1px solid var(--accent-border);
+  border-radius: var(--radius);
+  color: var(--text-muted);
+  text-decoration: none;
+  transition: background 0.2s ease;
+}
+.dealer-strip:hover { background: var(--bg-card-hover); color: var(--text); }
+.dealer-strip img { width: 72px; height: 72px; display: block; }
+.dealer-strip strong { color: var(--white); }
+.dealer-card {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+  padding: 1.5rem;
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+}
+.dealer-card img { width: 120px; height: 120px; }
+.dealer-card h3 {
+  font-family: var(--font-display);
+  font-size: 1.45rem;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  margin: 0 0 0.4rem;
+  color: var(--white);
+}
+.dealer-card p { margin: 0 0 1rem; color: var(--text-muted); }
+.dealer-hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+.dealer-hero > div:first-child { flex: 1 1 28rem; }
+.dealer-hero-badge img { width: 150px; height: 150px; display: block; }
+.page-hero .eyebrow a { color: inherit; }
+.dealer-copy { max-width: 40rem; color: var(--text-muted); margin: 0; }
