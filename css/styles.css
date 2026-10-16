@@ -1512,3 +1512,33 @@ picture { display: block; }
 .product-card .btn { align-self: flex-start; margin-top: 0.4rem; }
 .product-note { max-width: 44rem; color: var(--text-muted); font-size: 0.92rem; margin: 2rem 0 1rem; }
 .dealer-teaser { font-weight: 700; color: var(--accent); }
+
+/* FAQ page */
+.faq-toc { display: flex; flex-wrap: wrap; gap: 0.5rem; margin-top: 1.5rem; }
+.faq-toc a {
+  padding: 0.4rem 0.85rem;
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  font-size: 0.9rem;
+  color: var(--text);
+}
+.faq-toc a:hover { background: var(--accent-soft); color: var(--white); }
+.faq-section { padding-top: 0; scroll-margin-top: calc(var(--header-h) + 1rem); }
+.faq-section:first-of-type { padding-top: 3rem; }
+.faq-list { display: grid; gap: 1rem; max-width: 860px; }
+.faq-item h3 { margin: 0 0 0.5rem; font-size: 1.1rem; color: var(--white); }
+.faq-item p { margin: 0; color: var(--text-muted); }
+.faq-more { margin-top: 1.5rem; }
+
+/* Nav: keep eight links on one row between tablet and wide desktop */
+@media (min-width: 861px) {
+  .brand span, .nav a { white-space: nowrap; }
+  .nav { gap: 0.1rem; }
+  .nav a { padding: 0.45rem 0.55rem; font-size: 0.9rem; }
+  .nav .social-links { display: none; }
+  .nav .btn { margin-left: 0.35rem; }
+  .nav a.btn-primary { padding: 0.55rem 0.9rem; }
+}
+@media (min-width: 861px) and (max-width: 1000px) {
+  .brand span { display: none; }
+}
