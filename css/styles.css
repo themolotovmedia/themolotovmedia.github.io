@@ -1627,3 +1627,7 @@ picture { display: block; }
 .hero-actions-top { margin: 0.25rem 0 1.25rem; }
 .btn-lg { padding: 0.95rem 1.8rem; font-size: 1.05rem; }
 .book-box { margin-top: 1rem; }
+.product-ship-note { margin: 0.2rem 0 0; font-size: 0.8rem; line-height: 1.4; color: var(--text-dim); }
+.book-box p { margin: 0; }
+.book-box .book-box-actions { display: flex; flex-wrap: wrap; gap: 0.5rem; margin-top: 0.75rem; }
+.btn-sm { padding: 0.5rem 1rem; font-size: 0.875rem; }
