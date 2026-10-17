@@ -45,4 +45,4 @@ Recommended: set the document root so `index.html` is the homepage and paths lik
 - Social: Facebook, Instagram, YouTube, X. See `../SOCIAL_LINKS.md`.
 - Programs are **Coming Soon**; public prices shown are **$60 CAD/hour** consultation and **$80 CAD/hour** in-home sessions (anywhere in the Municipality of Clare, travel included; farther by request).
 - Choosing "Home visit" on the contact form (or opening `contact.html?program=home-visit`) reveals a required home-visit intake. The answers go into the pre-filled email (subject "Home visit request: <dog>, <community>"), kept under about 1800 characters.
-- Four Amazon.ca paperback links plus two "coming soon" books (The Sport Dog Playbook, Protection Training). No Apex Protocol.
+- Four signed paperback books sold directly through Stripe payment links. No Apex Protocol.

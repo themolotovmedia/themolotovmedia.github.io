@@ -1661,3 +1661,52 @@ picture { display: block; }
     gap: 1.5rem;
   }
 }
+
+/* About: book covers in the Published Works grid */
+.book-grid--covers {
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+.book-grid--covers .book-card--wide {
+  grid-column: 1 / -1;
+}
+.book-cover {
+  display: block;
+  margin: -0.25rem -0.25rem 0.25rem;
+  padding: 1rem;
+  border-radius: var(--radius);
+  background: rgba(255, 255, 255, 0.05);
+  transition: transform 0.2s ease, background 0.2s ease;
+}
+.book-cover:hover,
+.book-cover:focus-visible {
+  transform: translateY(-2px);
+  background: var(--accent-soft);
+}
+.book-cover img {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 2 / 3;
+  object-fit: contain;
+  border-radius: 6px;
+  filter: drop-shadow(0 4px 10px rgba(0, 0, 0, 0.45));
+}
+.book-grid--covers .book-actions .btn {
+  white-space: normal;
+  text-align: center;
+}
+@media (max-width: 860px) {
+  .book-grid--covers {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 0.9rem;
+  }
+  .book-grid--covers .book-card {
+    padding: 1rem;
+  }
+  .book-cover {
+    padding: 0.6rem;
+  }
+}
+.book-grid--covers .book-actions {
+  margin-top: auto;
+}
