@@ -1681,34 +1681,3 @@ picture { display: block; }
   margin-top: auto;
 }
 
-/* About: founder layout with Ryan's full portrait */
-.founder-layout {
-  display: grid;
-  grid-template-columns: minmax(0, 420px) minmax(0, 1fr) minmax(0, 1fr);
-  grid-template-areas:
-    "portrait bio bio"
-    "portrait a b";
-  gap: 1.5rem 2rem;
-  align-items: start;
-}
-.founder-portrait { grid-area: portrait; }
-.founder-bio { grid-area: bio; }
-.founder-photo-a { grid-area: a; }
-.founder-photo-b { grid-area: b; }
-.founder-layout .card p + p { margin-top: 0.85rem; }
-.founder-portrait img {
-  aspect-ratio: auto;
-  height: auto;
-  object-fit: contain;
-}
-@media (max-width: 860px) {
-  .founder-layout {
-    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
-    grid-template-areas:
-      "bio bio"
-      "portrait portrait"
-      "a b";
-    gap: 1.25rem 1rem;
-  }
-}
-.founder-layout .dog-photo { max-width: none; }
