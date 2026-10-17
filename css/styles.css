@@ -1631,3 +1631,37 @@ picture { display: block; }
 .book-box p { margin: 0; }
 .book-box .book-box-actions { display: flex; flex-wrap: wrap; gap: 0.5rem; margin-top: 0.75rem; }
 .btn-sm { padding: 0.5rem 1rem; font-size: 0.875rem; }
+
+/* Founder headshot (about page) */
+.founder-header {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  max-width: 48rem;
+}
+.founder-headshot {
+  flex: 0 0 auto;
+  display: block;
+}
+.founder-headshot img {
+  display: block;
+  width: 112px;
+  height: 112px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid var(--accent);
+  box-shadow: 0 0 0 4px var(--accent-soft);
+}
+.founder-header-text {
+  min-width: 0;
+}
+@media (max-width: 520px) {
+  .founder-header {
+    gap: 1rem;
+    align-items: flex-start;
+  }
+  .founder-headshot img {
+    width: 88px;
+    height: 88px;
+  }
+}
