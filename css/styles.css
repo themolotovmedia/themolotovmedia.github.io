@@ -1632,36 +1632,6 @@ picture { display: block; }
 .book-box .book-box-actions { display: flex; flex-wrap: wrap; gap: 0.5rem; margin-top: 0.75rem; }
 .btn-sm { padding: 0.5rem 1rem; font-size: 0.875rem; }
 
-/* About hero: lead paragraph with Ryan's photo on the right */
-.about-hero-row {
-  display: grid;
-  grid-template-columns: minmax(0, 36rem) minmax(0, 420px);
-  gap: 2.5rem;
-  align-items: start;
-}
-.about-hero-row .lead {
-  margin: 0;
-}
-.about-hero-photo {
-  margin: 0;
-}
-.about-hero-photo img {
-  display: block;
-  width: 100%;
-  height: auto;
-  aspect-ratio: 4 / 3;
-  object-fit: cover;
-  border-radius: var(--radius);
-  border: 1px solid var(--border);
-  box-shadow: var(--shadow);
-}
-@media (max-width: 860px) {
-  .about-hero-row {
-    grid-template-columns: minmax(0, 1fr);
-    gap: 1.5rem;
-  }
-}
-
 /* About: book covers in the Published Works grid */
 .book-grid--covers {
   grid-template-columns: repeat(4, minmax(0, 1fr));
@@ -1710,3 +1680,35 @@ picture { display: block; }
 .book-grid--covers .book-actions {
   margin-top: auto;
 }
+
+/* About: founder layout with Ryan's full portrait */
+.founder-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 420px) minmax(0, 1fr) minmax(0, 1fr);
+  grid-template-areas:
+    "portrait bio bio"
+    "portrait a b";
+  gap: 1.5rem 2rem;
+  align-items: start;
+}
+.founder-portrait { grid-area: portrait; }
+.founder-bio { grid-area: bio; }
+.founder-photo-a { grid-area: a; }
+.founder-photo-b { grid-area: b; }
+.founder-layout .card p + p { margin-top: 0.85rem; }
+.founder-portrait img {
+  aspect-ratio: auto;
+  height: auto;
+  object-fit: contain;
+}
+@media (max-width: 860px) {
+  .founder-layout {
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+    grid-template-areas:
+      "bio bio"
+      "portrait portrait"
+      "a b";
+    gap: 1.25rem 1rem;
+  }
+}
+.founder-layout .dog-photo { max-width: none; }
