@@ -14,7 +14,7 @@
     });
   }
 
-  var TO = "theryanmckenzie@gmail.com";
+  var TO = "info@acadiacanineacademy.com";
   var MAX_BODY = 1800;
   var form = document.querySelector("#contact-form");
   var programSelect = document.querySelector("#program");
