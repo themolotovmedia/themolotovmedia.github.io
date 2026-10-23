@@ -1696,3 +1696,10 @@ picture { display: block; }
   margin-top: auto;
 }
 
+
+/* Home page books */
+.home-books { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 1.25rem; }
+.home-book { display: flex; flex-direction: column; gap: 0.6rem; color: var(--white); text-decoration: none; font-weight: 600; text-align: center; }
+.home-book img { display: block; width: 100%; height: auto; aspect-ratio: 2 / 3; object-fit: cover; border-radius: var(--radius-sm); box-shadow: 0 8px 20px rgba(0, 0, 0, 0.45); transition: transform 0.2s ease; }
+.home-book:hover img, .home-book:focus-visible img { transform: translateY(-4px); }
+@media (max-width: 700px) { .home-books { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1rem; } }
