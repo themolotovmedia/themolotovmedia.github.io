@@ -1607,6 +1607,21 @@ picture { display: block; }
 .shop-empty { color: var(--text-muted); padding: 2rem 0; }
 .link-btn { background: none; border: 0; padding: 0; color: var(--accent); font: inherit; cursor: pointer; text-decoration: underline; }
 .shop-notes .product-note { margin: 1.25rem 0 0; }
+/* Compact store cards (Oct 2026) */
+.shop-grid { grid-template-columns: repeat(auto-fill, minmax(155px, 1fr)); gap: 0.9rem; }
+.shop-grid .product-card { padding: 0.7rem 0.7rem 0.85rem; gap: 0.3rem; }
+.shop-grid .product-img { margin-bottom: 0.25rem; }
+.shop-grid .product-img img { padding: 6%; }
+.shop-grid .product-img-book img { padding: 0.6rem; }
+.shop-grid .product-img-soon img { padding: 24%; }
+.shop-item h3 { font-size: 0.98rem; }
+.shop-grid .product-cat { font-size: 0.68rem; }
+.shop-grid .product-model { font-size: 0.74rem; }
+.shop-grid .product-desc { font-size: 0.8rem; line-height: 1.4; }
+.shop-grid .product-price { font-size: 0.98rem; margin-top: 0.2rem; }
+.shop-grid .product-ship-note { font-size: 0.74rem; }
+.shop-grid .product-price-note { font-size: 0.82rem; }
+.shop-actions .btn, .shop-item > .btn { padding: 0.45rem 0.75rem; font-size: 0.78rem; white-space: normal; text-align: center; }
 @media (max-width: 860px) {
   .shop-layout { grid-template-columns: 1fr; gap: 1rem; }
   .shop-sidebar { position: static; padding: 0.9rem; gap: 0.75rem; }
@@ -1616,11 +1631,11 @@ picture { display: block; }
   .shop-filters { padding-top: 0.75rem; }
   .shop-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 0.8rem; }
   .shop-grid .product-card { padding: 0.7rem 0.7rem 0.9rem; }
-  .shop-item h3 { font-size: 1.02rem; }
-  .shop-grid .product-desc { font-size: 0.82rem; }
-  .shop-actions .btn, .shop-item > .btn { padding: 0.5rem 0.8rem; font-size: 0.82rem; }
+  .shop-item h3 { font-size: 0.92rem; }
+  .shop-grid .product-desc { font-size: 0.78rem; }
+  .shop-actions .btn, .shop-item > .btn { padding: 0.45rem 0.7rem; font-size: 0.76rem; }
 }
-@media (max-width: 380px) { .shop-grid { grid-template-columns: 1fr; } }
+@media (max-width: 380px) { .shop-grid { gap: 0.6rem; } .shop-grid .product-card { padding: 0.55rem 0.55rem 0.75rem; } }
 .shop-sidebar[hidden], .shop-toolbar[hidden] { display: none; }
 .product-price-note { font-size: 0.92rem; font-weight: 600; color: var(--text-muted); }
 @media (max-width: 860px) { .shop-reset { width: auto; } }
