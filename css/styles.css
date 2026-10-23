@@ -1703,3 +1703,7 @@ picture { display: block; }
 .home-book img { display: block; width: 100%; height: auto; aspect-ratio: 2 / 3; object-fit: cover; border-radius: var(--radius-sm); box-shadow: 0 8px 20px rgba(0, 0, 0, 0.45); transition: transform 0.2s ease; }
 .home-book:hover img, .home-book:focus-visible img { transform: translateY(-4px); }
 @media (max-width: 700px) { .home-books { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1rem; } }
+.dealer-stack { display: grid; gap: 1rem; }
+.dealer-stack .dealer-strip { margin-bottom: 0; }
+div.dealer-strip:hover { background: var(--bg-card); color: var(--text-muted); }
+.dealer-stack .dealer-strip picture { flex-shrink: 0; }
