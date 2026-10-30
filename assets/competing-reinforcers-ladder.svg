@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 520" font-family="Inter, Arial, sans-serif">
+  <rect width="800" height="520" rx="18" fill="#121a2b"/>
+  <text x="400" y="48" fill="#ffffff" font-size="30" font-weight="700" text-anchor="middle" font-family="'Barlow Condensed', Arial, sans-serif">THE DISTRACTION LADDER</text>
+  <text x="400" y="78" fill="#6eb6e8" font-size="16" text-anchor="middle">Climb one step at a time. Slip? Go back down a step.</text>
+  <g font-size="17" fill="#ffffff">
+    <rect x="60" y="400" width="680" height="56" rx="10" fill="#1a3a6b"/>
+    <text x="84" y="434"><tspan font-weight="700">1.</tspan> Quiet room, no distractions. Teach it with food or toy.</text>
+    <rect x="100" y="334" width="640" height="56" rx="10" fill="#1d4579"/>
+    <text x="124" y="368"><tspan font-weight="700">2.</tspan> Boring distraction far away. Lots of space.</text>
+    <rect x="140" y="268" width="600" height="56" rx="10" fill="#215088"/>
+    <text x="164" y="302"><tspan font-weight="700">3.</tspan> Same distraction, a little closer.</text>
+    <rect x="180" y="202" width="560" height="56" rx="10" fill="#2a5f9e"/>
+    <text x="204" y="236"><tspan font-weight="700">4.</tspan> Stronger distraction, back to far away.</text>
+    <rect x="220" y="136" width="520" height="56" rx="10" fill="#4a9fd4"/>
+    <text x="244" y="170" fill="#0c1220"><tspan font-weight="700">5.</tspan> Real life: squirrels, deer, other dogs.</text>
+  </g>
+  <text x="400" y="494" fill="#b9c6d8" font-size="15" text-anchor="middle">Reward every win. Use the distraction itself as the prize when you can.</text>
+</svg>
