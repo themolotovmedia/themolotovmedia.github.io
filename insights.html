@@ -19,7 +19,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/styles.css?v=20261030a">
+  <link rel="stylesheet" href="css/styles.css?v=20261102a">
   <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -127,73 +127,89 @@
           <p class="section-label">Articles</p>
           <h2 id="insights-list-heading">Latest articles</h2>
         </div>
+        <div class="insight-tools">
+          <label class="insight-search-label" for="insight-search">Search articles</label>
+          <input id="insight-search" class="insight-search" type="search" placeholder="Try recall, crate or muzzle" autocomplete="off" aria-describedby="insight-count">
+          <div class="insight-tags" role="group" aria-label="Filter by topic">
+            <button type="button" class="tag-chip" data-tag="all" aria-pressed="true">All</button>
+            <button type="button" class="tag-chip" data-tag="obedience" aria-pressed="false">Obedience</button>
+            <button type="button" class="tag-chip" data-tag="puppies" aria-pressed="false">Puppies</button>
+            <button type="button" class="tag-chip" data-tag="ecollar" aria-pressed="false">E-Collar</button>
+            <button type="button" class="tag-chip" data-tag="behaviour" aria-pressed="false">Behaviour</button>
+            <button type="button" class="tag-chip" data-tag="science" aria-pressed="false">Science and Learning</button>
+            <button type="button" class="tag-chip" data-tag="tools" aria-pressed="false">Tools and Gear</button>
+            <button type="button" class="tag-chip" data-tag="safety" aria-pressed="false">Safety</button>
+          </div>
+          <p id="insight-count" class="insight-count" aria-live="polite"></p>
+        </div>
         <div class="insight-grid">
-          <article class="card insight-card">
+          <article class="card insight-card" data-tags="behaviour safety science" data-keywords="dunbar bite scale levels aggression bite history puncture reactive vet behaviour modification ian dunbar">
             <h3><a href="insights/understanding-the-dunbar-bite-scale.html">Understanding the Dunbar Bite Scale</a></h3>
             <p>What each of the six bite levels means, where the scale came from, and why we ask about bite history before Behaviour Modification.</p>
             <a class="more-link" href="insights/understanding-the-dunbar-bite-scale.html" aria-label="Read: Understanding the Dunbar Bite Scale">Read article&nbsp;&rarr;</a>
           </article>
-          <article class="card insight-card">
+          <article class="card insight-card" data-tags="science" data-keywords="pavlov classical conditioning bell association marker learning theory">
             <h3><a href="insights/pavlov-classical-conditioning-dog-training.html">Pavlov's Dogs: What Classical Conditioning Means for Your Dog</a></h3>
             <p>Who Ivan Pavlov was, what his dog experiments really showed, the truth about the bell, and how we use it in training.</p>
             <a class="more-link" href="insights/pavlov-classical-conditioning-dog-training.html" aria-label="Read: Pavlov's Dogs: What Classical Conditioning Means for Your Dog">Read article&nbsp;&rarr;</a>
           </article>
-          <article class="card insight-card">
+          <article class="card insight-card" data-tags="tools ecollar safety" data-keywords="flat collar slip lead prong collar e-collar ecollar muzzle long line crate fair tools gear">
             <h3><a href="insights/our-approach-to-training-tools.html">Our Approach to Training Tools</a></h3>
             <p>How we choose and use collars, leads, the e-collar, muzzle, long line and crate, fairly and in proportion.</p>
             <a class="more-link" href="insights/our-approach-to-training-tools.html" aria-label="Read: Our Approach to Training Tools">Read article&nbsp;&rarr;</a>
           </article>
-          <article class="card insight-card">
+          <article class="card insight-card" data-tags="science behaviour" data-keywords="dog mind smell scent body language communication learning association cognition">
             <h3><a href="insights/how-dogs-think-learn-communicate.html">How Dogs Think, Learn and Communicate</a></h3>
             <p>What science tells us about how dogs perceive the world, learn through association and talk with their bodies, and how that shapes the way we train.</p>
             <a class="more-link" href="insights/how-dogs-think-learn-communicate.html" aria-label="Read: How Dogs Think, Learn and Communicate">Read article&nbsp;&rarr;</a>
           </article>
-          <article class="card insight-card">
+          <article class="card insight-card" data-tags="science obedience" data-keywords="premack reward sniffing greeting ball play okay release distraction ladder marker yes">
             <h3><a href="insights/premack-principle-dog-training.html">The Premack Principle: Using What Your Dog Wants as the Reward</a></h3>
             <p>How to turn sniffing, greeting and ball play into rewards for good behaviour, and when it works and when it does not.</p>
             <a class="more-link" href="insights/premack-principle-dog-training.html" aria-label="Read: The Premack Principle: Using What Your Dog Wants as the Reward">Read article&nbsp;&rarr;</a>
           </article>
-          <article class="card insight-card">
+          <article class="card insight-card" data-tags="science obedience behaviour" data-keywords="squirrel deer prey drive distraction recall chasing reinforcer quadrants prevention">
             <h3><a href="insights/competing-reinforcers-squirrel-dog-training.html">When the Squirrel Wins: Competing Reinforcers in Plain English</a></h3>
             <p>Why food and toys lose to squirrels and deer, how to prevent it, and what to do fairly when the distraction wins anyway.</p>
             <a class="more-link" href="insights/competing-reinforcers-squirrel-dog-training.html" aria-label="Read: When the Squirrel Wins: Competing Reinforcers in Plain English">Read article&nbsp;&rarr;</a>
           </article>
-          <article class="card insight-card">
+          <article class="card insight-card" data-tags="science" data-keywords="four quadrants operant conditioning positive negative reinforcement punishment pavlov learning theory">
             <h3><a href="insights/four-quadrants-dog-training-plain-english.html">The Four Quadrants of Dog Training, in Plain English</a></h3>
             <p>Pavlov's dogs, the four quadrants and what "positive" and "negative" really mean, explained simply with everyday dog examples.</p>
             <a class="more-link" href="insights/four-quadrants-dog-training-plain-english.html" aria-label="Read: The Four Quadrants of Dog Training, in Plain English">Read article&nbsp;&rarr;</a>
           </article>
-          <article class="card insight-card">
+          <article class="card insight-card" data-tags="puppies tools safety" data-keywords="crate kennel house training vet stay emergency evacuation travel freedom">
             <h3><a href="insights/crate-training-every-dog.html">Why Every Dog Should Be Crate Trained</a></h3>
             <p>Why a crate is a safe place, not a cage, and how it helps at the vet, in emergencies and at home.</p>
             <a class="more-link" href="insights/crate-training-every-dog.html" aria-label="Read: Why Every Dog Should Be Crate Trained">Read article&nbsp;&rarr;</a>
           </article>
-          <article class="card insight-card">
+          <article class="card insight-card" data-tags="tools safety behaviour" data-keywords="muzzle basket muzzle conditioning vet grooming bite prevention myths">
             <h3><a href="insights/muzzle-training-basics.html">Muzzle Training: Why Every Dog Should Learn to Love a Muzzle</a></h3>
             <p>Muzzle myths, choosing a secure basket muzzle, and teaching your dog to love wearing one.</p>
             <a class="more-link" href="insights/muzzle-training-basics.html" aria-label="Read: Muzzle Training: Why Every Dog Should Learn to Love a Muzzle">Read article&nbsp;&rarr;</a>
           </article>
-          <article class="card insight-card">
+          <article class="card insight-card" data-tags="obedience puppies tools" data-keywords="loose leash walking pulling heel structured walk leash pressure distractions">
             <h3><a href="insights/leash-walking-basics.html">Loose-Leash Walking: The Basics That Actually Work</a></h3>
             <p>Why dogs pull, where to start and how to build a calm walk on a loose leash, step by step.</p>
             <a class="more-link" href="insights/leash-walking-basics.html" aria-label="Read: Loose-Leash Walking: The Basics That Actually Work">Read article&nbsp;&rarr;</a>
           </article>
-          <article class="card insight-card">
+          <article class="card insight-card" data-tags="obedience puppies" data-keywords="place cot bed settle calm stay door manners visitors">
             <h3><a href="insights/why-place-training-matters.html">Why Place Training Matters for Every Dog</a></h3>
             <p>What place training is, why a raised cot helps busy dogs settle and how to teach it at home.</p>
             <a class="more-link" href="insights/why-place-training-matters.html" aria-label="Read: Why Place Training Matters for Every Dog">Read article&nbsp;&rarr;</a>
           </article>
-          <article class="card insight-card">
+          <article class="card insight-card" data-tags="ecollar tools obedience puppies" data-keywords="e-collar ecollar remote collar shock myths low level stimulation recall off leash ect">
             <h3><a href="insights/e-collar-myths-low-level-training.html">E-Collar Myths and the Truth About Low-Level Training</a></h3>
             <p>The e-collar myths we hear most, and how we use modern e-collars at low levels, paired with rewards.</p>
             <a class="more-link" href="insights/e-collar-myths-low-level-training.html" aria-label="Read: E-Collar Myths and the Truth About Low-Level Training">Read article&nbsp;&rarr;</a>
           </article>
-          <article class="card insight-card">
+          <article class="card insight-card" data-tags="obedience" data-keywords="choosing trainer balanced training questions experience program lessons hire">
             <h3><a href="insights/choosing-a-dog-trainer-balanced-training.html">How to Choose a Dog Trainer: What Balanced Training Really Means</a></h3>
             <p>Questions to ask before you hire a trainer, and what balanced training really means at ACA.</p>
             <a class="more-link" href="insights/choosing-a-dog-trainer-balanced-training.html" aria-label="Read: How to Choose a Dog Trainer: What Balanced Training Really Means">Read article&nbsp;&rarr;</a>
           </article>
         </div>
+        <p class="insight-empty" id="insight-empty" hidden>No articles match. Try another word or pick All.</p>
         <p class="faq-more">Have a quick question? Our <a href="faq.html">FAQ</a> answers the ones we hear most.</p>
       </div>
     </section>
@@ -269,5 +285,6 @@
     </div>
   </footer>
   <script src="js/main.js?v=20261014m" defer></script>
+  <script src="js/insights.js?v=20261102a" defer></script>
 </body>
 </html>
