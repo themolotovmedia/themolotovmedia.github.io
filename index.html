@@ -285,20 +285,18 @@
             <p class="section-label">Join our mailing list</p>
             <h2 id="home-signup-heading">Get the free E-Collar intro</h2>
             <p>Sign up and we'll send you our free guide, E-Collar Introduction, plus the occasional training tip from our sessions.</p>
-            <form class="signup-form" action="https://formsubmit.co/acadiacanineacademy@gmail.com" method="POST">
-              <input type="hidden" name="_subject" value="New mailing list signup">
-              <input type="hidden" name="_next" value="https://acadiacanineacademy.com/free-guide-thanks.html">
-              <input type="hidden" name="_template" value="table">
-              <input type="hidden" name="_captcha" value="false">
-              <input type="hidden" name="Source" value="Home page">
-              <input type="text" name="_honey" style="display:none" tabindex="-1" autocomplete="off">
+            <iframe name="gform-target" id="gform-target" title="Signup" style="display:none" aria-hidden="true"></iframe>
+            <form class="signup-form" action="https://docs.google.com/forms/d/e/1FAIpQLSe9aNu8aek0jPsuZFkC7jq_V-5JPukVyNjsVwYKQK7NQBVNfA/formResponse" method="POST" target="gform-target" onsubmit="if(this.website&&this.website.value){return false;}window.acaSignupSent=true;">
+              <input type="hidden" name="entry.1461786528" value="Home page">
+              <input type="text" name="website" class="hp-field" style="display:none" tabindex="-1" autocomplete="off" aria-hidden="true">
               <div class="signup-fields">
-                <div class="form-row"><label for="home-name">Name</label><input id="home-name" name="Name" type="text" required autocomplete="name" placeholder="First name"></div>
-                <div class="form-row"><label for="home-email">Email</label><input id="home-email" name="Email" type="email" required autocomplete="email" placeholder="Your email address"></div>
+                <div class="form-row"><label for="home-name">Name</label><input id="home-name" name="entry.1224755761" type="text" required autocomplete="name" placeholder="First name"></div>
+                <div class="form-row"><label for="home-email">Email</label><input id="home-email" name="entry.246696509" type="email" required autocomplete="email" placeholder="Your email address"></div>
               </div>
-              <label class="signup-consent"><input type="checkbox" name="Consent" value="Yes" required> Yes, send me the free guide and occasional training tips from Acadia Canine Academy. Unsubscribe anytime.</label>
+              <label class="signup-consent"><input type="checkbox" name="entry.721835961" value="Yes, send me the free guide and occasional training tips from Acadia Canine Academy. Unsubscribe anytime." required> Yes, send me the free guide and occasional training tips from Acadia Canine Academy. Unsubscribe anytime.</label>
               <button class="btn btn-primary" type="submit">Send me the free guide</button>
             </form>
+            <script>document.getElementById("gform-target").addEventListener("load",function(){if(window.acaSignupSent){window.location.href="/free-guide-thanks.html";}});</script>
           </div>
         </div>
       </div>
