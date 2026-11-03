@@ -1732,3 +1732,12 @@ div.dealer-strip:hover { background: var(--bg-card); color: var(--text-muted); }
 .insight-count { color: var(--text-dim); font-size: 0.9rem; margin: 0.75rem 0 0; }
 .insight-empty { color: var(--text-muted); padding: 1.5rem; background: var(--bg-card); border-radius: var(--radius); text-align: center; }
 .insight-card[hidden], .insight-empty[hidden] { display: none; }
+
+/* Mailing list signup */
+.signup-form { margin-top: 1rem; background: var(--bg); border: 1px solid var(--border); border-radius: 12px; padding: 1.1rem 1.2rem; display: grid; gap: 0.8rem; }
+.signup-title { font-family: var(--font-display); font-size: 1.15rem; margin: 0; color: var(--text, #fff); }
+.signup-fields { display: grid; gap: 0.8rem; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); }
+.signup-fields .form-row { margin: 0; }
+.signup-consent { display: flex; gap: 0.55rem; align-items: flex-start; font-size: 0.85rem; color: var(--text-muted); line-height: 1.45; }
+.signup-consent input { margin-top: 0.2rem; accent-color: var(--accent); }
+.signup-form .btn { justify-self: start; }
