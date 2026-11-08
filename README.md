@@ -41,7 +41,7 @@ Recommended: set the document root so `index.html` is the homepage and paths lik
 
 ## Notes for Ryan
 
-- Contact form uses a private `mailto:` destination in JS/form action only. **Do not display any email address on the public pages**.
+- Public contact address is info@acadiacanineacademy.com (contact page and footer). Inquiry forms deliver to acadiacanineacademy@gmail.com via the mailto in `js/main.js` and the contact form action. Do not list a personal Gmail, and do not send forms to ryan@acadiacanineacademy.com or info@.
 - Social: Facebook, Instagram, YouTube, X. See `../SOCIAL_LINKS.md`.
 - Programs are **Coming Soon**; no session prices are posted. Walk-in consultations welcome; in-home sessions anywhere in the Municipality of Clare (farther by request).
 - Choosing "Home visit" on the contact form (or opening `contact.html?program=home-visit`) reveals a required home-visit intake. The answers go into the pre-filled email (subject "Home visit request: <dog>, <community>"), kept under about 1800 characters.
