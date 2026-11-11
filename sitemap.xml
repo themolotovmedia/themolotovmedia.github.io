@@ -16,9 +16,14 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://acadiacanineacademy.com/basic-obedience.html</loc>
-    <lastmod>2026-10-08</lastmod>
+    <loc>https://acadiacanineacademy.com/functional-obedience.html</loc>
+    <lastmod>2026-11-11</lastmod>
     <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://acadiacanineacademy.com/basic-obedience.html</loc>
+    <lastmod>2026-11-11</lastmod>
+    <priority>0.3</priority>
   </url>
   <url>
     <loc>https://acadiacanineacademy.com/advanced-obedience.html</loc>
@@ -28,6 +33,11 @@
   <url>
     <loc>https://acadiacanineacademy.com/behaviour-modification.html</loc>
     <lastmod>2026-10-16</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://acadiacanineacademy.com/board-and-train.html</loc>
+    <lastmod>2026-11-11</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
@@ -62,7 +72,7 @@
   </url>
   <url>
     <loc>https://acadiacanineacademy.com/insights.html</loc>
-    <lastmod>2026-10-16</lastmod>
+    <lastmod>2026-11-11</lastmod>
     <priority>0.5</priority>
   </url>
   <url>
@@ -128,6 +138,16 @@
   <url>
     <loc>https://acadiacanineacademy.com/insights/understanding-the-dunbar-bite-scale.html</loc>
     <lastmod>2026-11-02</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://acadiacanineacademy.com/insights/functional-obedience-daily-training-schedule.html</loc>
+    <lastmod>2026-11-11</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://acadiacanineacademy.com/insights/before-using-an-e-collar.html</loc>
+    <lastmod>2026-11-11</lastmod>
     <priority>0.6</priority>
   </url>
 </urlset>

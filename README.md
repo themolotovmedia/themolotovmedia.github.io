@@ -25,8 +25,11 @@ Any free port works (`python3 -m http.server 5500`, etc.). You can also open `in
 | `about.html` | About |
 | `training.html` | Training |
 | `puppy-foundation.html` | Training > Puppy Foundations |
-| `basic-obedience.html` | Training > Basic Obedience |
+| `functional-obedience.html` | Training > Functional Obedience |
+| `basic-obedience.html` | Redirects to Functional Obedience |
 | `advanced-obedience.html` | Training > Advanced Obedience |
+| `behaviour-modification.html` | Training > Behaviour Modification |
+| `board-and-train.html` | Training > Board and Train |
 | `rehabilitation.html` | Training > Rehabilitation |
 | `store.html` | Store |
 | `contact.html` | Contact |
